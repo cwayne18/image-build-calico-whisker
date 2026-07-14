@@ -1,5 +1,5 @@
 ARG NODE_IMAGE=registry.suse.com/bci/nodejs:20
-ARG BCI_IMAGE=registry.suse.com/bci/bci-base:15.7
+ARG BCI_IMAGE=registry.suse.com/bci/bci-base:16.0
 
 FROM ${NODE_IMAGE} AS builder
 RUN zypper --non-interactive install -y git tar gzip
